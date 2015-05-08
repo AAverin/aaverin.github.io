@@ -4,6 +4,7 @@ title: Undersanding Dagger2 for Android
 ---
 
 **Why**
+
 I've been working on this new architecture for large-scaled Android applications, and the obvious choice to make sure everthing is modular and fully testable was to pick some Dependncy Injection framework.
 I've got no prior experience with them, and with Dagger2 being just released to the public I decided to just get the latest popular framework available and use it.
 But here's the thing. Even though there are several really good articles over the net about Dagger2, and there are talks by *Jake Wharthon* and *Greg Kick* - I took me quite some time to wrap my head around the whole concept and understand which part goes where and how it works with Dagger2. And I decided to write everything down so I wouldn't forget it myself and maybe it will help to understand it better to someone else.
@@ -19,7 +20,7 @@ Dagger2 at the moment is most advanced and fast.
 
 To make Dagger2 running for your project you need to do following steps:
 * add ```classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'``` to depenencies in your main build.gradle
-```
+```java
 buildscript {
     repositories {
         jcenter()
@@ -32,7 +33,7 @@ buildscript {
 ```
 * add ```apply plugin: 'com.neenbedankt.android-apt'``` to your module build.gradle
 * add Dagger2 and Java Annotations dependencies to your module:
-```
+```java
 apt         "com.google.dagger:dagger-compiler:2.0"
 compile     "com.google.dagger:dagger:2.0"
 provided    "org.glassfish:javax.annotation:10.0-b28"

@@ -29,7 +29,7 @@ You can follow my description in this github repository: [Dagger2 Step By Step r
 Now that we have a dummy activity, let's do some simple injection.
 
 This class would be our parent class, that has a dependency.
-```
+```java
 public class TestClassParent {
 
     private final TestClassDependency testClassDependency;
@@ -49,7 +49,7 @@ public class TestClassParent {
 ```
 
 This is our dependency:
-```
+```java
 public class TestClassDependency {
 
     @Inject
@@ -64,7 +64,7 @@ public class TestClassDependency {
 ```
 
 I also would like to inject our parent class into main activity
-```
+```java
 public class MainActivity extends BaseActivity {
 
     @Inject TestClassParent testClassParent;
@@ -82,7 +82,7 @@ public class MainActivity extends BaseActivity {
 ```
 
 And this small interface is what really makes things possible:
-```
+```java
 @Singleton
 @Component
 public interface TestClassComponent {
@@ -100,7 +100,7 @@ Now, let's walk through changes quickly.
 
 *MainActivity* has some more significant changes. First - we have added ```@Inject TestClassParent testClassParent;``` - meaning we would like to inject a variable.
 We have also added these 2 lines:
-```
+```java
 TestClassComponent testComponent = DaggerTestClassComponent.builder().build();
 testComponent.injectTo(this);
 ```
@@ -123,7 +123,7 @@ Here is the [diff](https://github.com/AAverin/dagger2_stepbystep/commit/7b8fcaec
 Or you can checkout [this branch](https://github.com/AAverin/dagger2_stepbystep/tree/step1_basics_2)
 
 Here is how our TestClassComponent looks now:
-```
+```java
 @Singleton
 @Component
 public interface TestClassComponent {
