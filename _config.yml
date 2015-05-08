@@ -10,6 +10,7 @@ tagline:             Android blog
 url:                 http://aaverin.github.io
 paginate:            1
 baseurl:             ""
+markdown:			 redcarpet
 
 # Assets
 #
@@ -28,7 +29,3 @@ author:
 version:             1.0.0
 github:
   repo:              https://github.com/poole/poole
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge

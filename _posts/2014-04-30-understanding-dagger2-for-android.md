@@ -45,6 +45,7 @@ provided    "org.glassfish:javax.annotation:10.0-b28"
 [2nd part - Dagger2 Basics](http://aaverin.github.io/2014/05/06/dagger2-basics/)
 
 **Links**
+
  * [Jake Wharthon's talk on Devoxx2013 about Dagger1](https://www.parleys.com/tutorial/architecting-android-applications-dagger)
  * [Jake Wharthon's talk on Devoxx2014 about Dagger2](https://www.parleys.com/tutorial/the-future-dependency-injection-dagger-2)
  * [Greg Kick's initial introduction to Dagger2](https://www.youtube.com/watch?v=oK_XtfXPkqw)
@@ -52,6 +53,7 @@ provided    "org.glassfish:javax.annotation:10.0-b28"
  * [Konstantin Mikheev - Snorkeling with Dagger2](http://konmik.github.io/snorkeling-with-dagger-2.html)
 
 **Useful Github repos**
+
 * [Android CleanArchitecture @android10](https://github.com/android10/Android-CleanArchitecture)
 * [U2020 port to MVP + Dagger2 @LiveTyping](https://github.com/LiveTyping/u2020-mvp)
 * [Dagger2 Example @mgrzechocinsky](https://github.com/mgrzechocinski/dagger2-example)
