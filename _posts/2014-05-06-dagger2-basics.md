@@ -1,10 +1,11 @@
 ---
 layout: post
 comments: true
+categories: [android, tutorials]
+tags: [dagger2, di, dependency injection]
 title: Dagger2 basics
+excerpt: 2nd part of Dagger2 for Android articles offers some basic explanations on Dagger2 terminology and gives 2 examples of most simple possible cases of injections.
 ---
-
-# Basics
 
 To proceed into the most simplified example of Dagger2 usage let's first go through some terms and explain them.
 

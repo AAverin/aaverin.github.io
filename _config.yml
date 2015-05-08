@@ -8,7 +8,6 @@ relative_permalinks: true
 title:               Anton Averin Development Blog
 tagline:             Android blog
 url:                 http://aaverin.github.io
-paginate:            1
 baseurl:             ""
 markdown:			 redcarpet
 
@@ -29,21 +28,19 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Anton Averin Dev Blog
 
 # About/contact
 author:
   name:              Anton Averin
   url:               http://anton.averin.pro
+  twitter:           a_a_averin
+  github:            aaverin
+  linkedin:          anton.averin
   email:             a.a.averin@gmail.com
 
-# Custom vars
-version:             1.0.0
-github:
-  repo:              https://github.com/poole/poole
-
 rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
+categories_path: categories/index.html
+tags_path: tags/index.html
 
 BASE_PATH:
