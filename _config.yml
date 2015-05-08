@@ -12,12 +12,24 @@ paginate:            1
 baseurl:             ""
 markdown:			 redcarpet
 
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
+
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir:          _sass
   style:            :compressed
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: dbyll
 
 # About/contact
 author:
@@ -29,3 +41,9 @@ author:
 version:             1.0.0
 github:
   repo:              https://github.com/poole/poole
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+BASE_PATH:
