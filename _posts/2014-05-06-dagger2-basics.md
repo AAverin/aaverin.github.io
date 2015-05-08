@@ -3,7 +3,7 @@ layout: post
 title: Dagger2 basics
 ---
 
-**Basics**
+# Basics
 
 To proceed into the most simplified example of Dagger2 usage let's first go through some terms and explain them.
 
@@ -21,7 +21,7 @@ Here are some Dagger2 annotations:
 
 I undestand that can be a bit too vague, but let's try to figure things out in example.
 
-**Simpliest injection with Dagger2 on Android**
+## Simpliest injection with Dagger2 on Android
 
 Being an Android developer I will be using Android envoronment for examples. You can find plain Java examples in other articles, including Dagger2 docuemntation with *CoffeeMaker* sample.
 
@@ -124,7 +124,7 @@ And after that you will have to call ```myComponent.myInjectMethod(this)``` with
 
 Sounds pretty complex at first. But if you run the code - you'll see that now both depdndencies were injected.
 
-**Another approach**
+## Another approach
 
 Let's re-work our simple example to show how can we get a dependency explicitly.
 Here is the [diff](https://github.com/AAverin/dagger2_stepbystep/commit/7b8fcaecf3dc73d40054f1a54669280400a97d21). 
