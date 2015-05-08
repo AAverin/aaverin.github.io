@@ -27,7 +27,7 @@ I undestand that can be a bit too vague, but let's try to figure things out in e
 
 Being an Android developer I will be using Android envoronment for examples. You can find plain Java examples in other articles, including Dagger2 docuemntation with *CoffeeMaker* sample.
 
-Let's make a basic Android project with Dagger2 dependency. On how to setup Dagger2 please see [1st part](http://aaverin.github.io/2014/04/30/understanding-dagger2-for-android/).
+Let's make a basic Android project with Dagger2 dependency. On how to setup Dagger2 please see [1st part]({% post_url 2014-04-30-understanding-dagger2-for-android %})
 You can follow my description in this github repository: [Dagger2 Step By Step repo](https://github.com/AAverin/dagger2_stepbystep). *master* brach has the basic project setup.
 
 Now that we have a dummy activity, let's do some simple injection.
