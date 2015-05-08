@@ -4,6 +4,7 @@ title: Dagger2 basics
 ---
 
 **Basics**
+
 To proceed into the most simplified example of Dagger2 usage let's first go through some terms and explain them.
 
 Here are some Dagger2 annotations:
@@ -12,15 +13,16 @@ Here are some Dagger2 annotations:
 - requests a dependency to be injected
 - makes class to be available for injection (if used on constructor)
 
-@Module - Provides dependencies. By using @Provides annotation on a method you can have some specific logic for instantiating a dependency.
+**@Module** - Provides dependencies. By using @Provides annotation on a method you can have some specific logic for instantiating a dependency.
 
-@Component - Ties together Models and Injects. But I don't really like this description of Components because it doesn't really explain anything, at least for me=) I will make a more detailed explanation later, but for now - this class has 2 main puposes:
+**@Component** - Ties together Models and Injects. But I don't really like this description of Components because it doesn't really explain anything, at least for me=) I will make a more detailed explanation later, but for now - this class has 2 main puposes:
 - it can add injection support to system (eg. Android SDK) or any class that you don't own. It will allow you to inject something into other classes
 - it lists which dependencies you want to be available for injection
 
 I undestand that can be a bit too vague, but let's try to figure things out in example.
 
 **Simpliest injection with Dagger2 on Android**
+
 Being an Android developer I will be using Android envoronment for examples. You can find plain Java examples in other articles, including Dagger2 docuemntation with *CoffeeMaker* sample.
 
 Let's make a basic Android project with Dagger2 dependency. On how to setup Dagger2 please see [1st part](http://aaverin.github.io/2014/04/30/understanding-dagger2-for-android/).
@@ -123,6 +125,7 @@ And after that you will have to call ```myComponent.myInjectMethod(this)``` with
 Sounds pretty complex at first. But if you run the code - you'll see that now both depdndencies were injected.
 
 **Another approach**
+
 Let's re-work our simple example to show how can we get a dependency explicitly.
 Here is the [diff](https://github.com/AAverin/dagger2_stepbystep/commit/7b8fcaecf3dc73d40054f1a54669280400a97d21). 
 Or you can checkout [this branch](https://github.com/AAverin/dagger2_stepbystep/tree/step1_basics_2)
