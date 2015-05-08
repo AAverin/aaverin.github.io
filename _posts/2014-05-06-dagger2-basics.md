@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Dagger2 basics
 ---
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Undersanding Dagger2 for Android
 ---
 
