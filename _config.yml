@@ -8,9 +8,13 @@ relative_permalinks: true
 title:               Anton Averin Development Blog
 tagline:             Android blog
 url:                 http://aaverin.github.io
-paginate:            1
 baseurl:             ""
 markdown:			 redcarpet
+
+
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+exclude: ["README.md"] # files to exclude
 
 # Assets
 #
@@ -19,13 +23,24 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: Anton Averin Dev Blog
+
 # About/contact
 author:
   name:              Anton Averin
   url:               http://anton.averin.pro
+  twitter:           a_a_averin
+  github:            aaverin
+  linkedin:          anton.averin
   email:             a.a.averin@gmail.com
 
-# Custom vars
-version:             1.0.0
-github:
-  repo:              https://github.com/poole/poole
+rss_path: feed.xml
+categories_path: categories/index.html
+tags_path: tags/index.html
+
+BASE_PATH:
