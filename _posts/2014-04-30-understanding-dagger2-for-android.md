@@ -38,7 +38,7 @@ compile     "com.google.dagger:dagger:2.0"
 provided    "org.glassfish:javax.annotation:10.0-b28"
 ```
 
-
+[2nd part - Dagger2 Basics](http://aaverin.github.io/2014/05/06/dagger2-basics/)
 
 **Links**
  * [Jake Wharthon's talk on Devoxx2013 about Dagger1](https://www.parleys.com/tutorial/architecting-android-applications-dagger)
