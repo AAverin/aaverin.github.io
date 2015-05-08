@@ -20,6 +20,7 @@ Dagger2 at the moment is most advanced and fast.
 
 To make Dagger2 running for your project you need to do following steps:
 * add ```classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'``` to depenencies in your main build.gradle
+
 ```java
 buildscript {
     repositories {
@@ -31,8 +32,10 @@ buildscript {
     }
 }
 ```
+
 * add ```apply plugin: 'com.neenbedankt.android-apt'``` to your module build.gradle
 * add Dagger2 and Java Annotations dependencies to your module:
+
 ```java
 apt         "com.google.dagger:dagger-compiler:2.0"
 compile     "com.google.dagger:dagger:2.0"
