@@ -11,7 +11,7 @@ To proceed into the most simplified example of Dagger2 usage let's first go thro
 
 Here are some Dagger2 annotations:
 
-@Inject - Usually it's said that Inject requests dependencies. But it actually has 2 purposes:
+**@Inject** - Usually it's said that Inject requests dependencies. But it actually has 2 purposes:
 - requests a dependency to be injected
 - makes class to be available for injection (if used on constructor)
 
@@ -27,8 +27,9 @@ I undestand that can be a bit too vague, but let's try to figure things out in e
 
 Being an Android developer I will be using Android envoronment for examples. You can find plain Java examples in other articles, including Dagger2 docuemntation with *CoffeeMaker* sample.
 
-Let's make a basic Android project with Dagger2 dependency. On how to setup Dagger2 please see [1st part]({% post_url 2014-04-30-dagger2-for-android-part1 %})
-You can follow my description in this github repository: [Dagger2 Step By Step repo](https://github.com/AAverin/dagger2_stepbystep). *master* brach has the basic project setup.
+Let's make a basic Android project with Dagger2 dependency. On how to setup Dagger2 please see [1st part]({% post_url 2014-04-30-dagger2-for-android-part1 %}).
+
+You can follow my description in this github repository: [Dagger2 Step By Step repo](https://github.com/AAverin/dagger2_stepbystep) - *master* brach has the basic project setup.
 
 Now that we have a dummy activity, let's do some simple injection.
 
@@ -102,6 +103,7 @@ Check [this branch](https://github.com/AAverin/dagger2_stepbystep/commits/step1_
 The diff of changes in my repo: [Simpliest injection](https://github.com/AAverin/dagger2_stepbystep/commit/834ced4304f05498d75f144fc8060de2575235d1)
 
 Now, let's walk through changes quickly.
+
 *TestClassParent* constructor has @Inject annotation. For Dagger2 that means that this class is now can be injected. Also, our consturctor has a parameter. That means that Dagger2 should inject this parameter into constructor when TestClassParent will be injected somewhere.
 
 *TestClassDependency* also has @Inject in constructor, but no parameters. That means that it can be injected somewhere. Into our *TestClassParent*, for example.
@@ -124,7 +126,7 @@ Dagger does that by generating a new class for you. It will have a name of your 
 That newly generated class will have a builder() available, that you will need to use to instantiate a component.
 And after that you will have to call ```myComponent.myInjectMethod(this)``` within the class that you make available for injection.
 
-Sounds pretty complex at first. But if you run the code - you'll see that now both depdndencies were injected.
+Sounds pretty complex at first. But if you run the code - you'll see that now both dependencies were injected.
 
 ## Another approach
 
@@ -144,4 +146,4 @@ public interface TestClassComponent {
 
 The idea is that we no longer make MainActivity available for injection, but instead we say that TestClassDependency is now available for injections in other places. And after instantiating the component we can call our method to get the actual dependency.
 
-This is the simpliest possible usage of Dagger2, and I will explain some additional features of Components, Scopes and Modules in the next article.
+This is the simpliest possible usage of Dagger2, and I will explain some additional features of Components, Scopes and Modules in the [next article]({% post_url 2014-05-09-dagger2-for-android-Part3-Modules %}).
