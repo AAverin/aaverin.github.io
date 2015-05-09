@@ -3,7 +3,7 @@ layout: post
 categories: [android, tutorials]
 tags: [dagger2, di, dependency injection]
 comments: true
-title: Undersanding Dagger2 for Android
+title: Dagger2 For Android - Part1 - Introduction
 excerpt: First articles in the series of articles that make an attempt to explain how Dagger2 should be used in Android. I find that most of the articles about Dagger2 tend to go all head deep right away and do not really provide much valuable help for someone who is just starting with Dependency Injection - thus this series of articles.
 ---
 
