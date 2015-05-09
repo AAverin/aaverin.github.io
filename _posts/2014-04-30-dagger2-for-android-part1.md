@@ -44,7 +44,7 @@ compile     "com.google.dagger:dagger:2.0"
 provided    "org.glassfish:javax.annotation:10.0-b28"
 ```
 
-[2nd part - Dagger2 Basics]({% post_url 2014-05-06-dagger2-basics %})
+[2nd part - Dagger2 Basics]({% post_url 2014-05-06-dagger2-for-android-part2-basics %})
 
 ## Links
 
