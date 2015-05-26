@@ -17,26 +17,31 @@ I'm not that good in Bash scripting to make the exact copy, but here what I coul
 
 ## 1. Make a folder to store shortcuts
 - first of all make a *bin* folder by calling 
+
 ```
 mkdir ~/bin
 chmod a+rwx ~/bin
 ```
 - then make a *shortcuts* file
+
 ```
 touch ~/bin/shortcuts
 ```
 
 You will use this file the following way to make a new shortcut:
+
 ```
 "echo mylocalshortcut:/path/to/my/local/shortut" >> ~/bin/shortcuts
 ```
 
 ## 2. Make a 'cd' command wrapper to use you shortcuts
 - create a wrapper file
+
 ```
 touch ~/bin/cd_wrapper
 ```
 - use your favourite editor to add these lines inside:
+
 ```bash
 # format: [semicolon] shortcut colon destination [semicolon] ...
 
@@ -65,6 +70,7 @@ cd () {
 
 ```
 - Add created wrapper as a source, you can add these lines in your **~/.bash_profile** file
+
 ```
 source $HOME/bin/cd_wrapper
 ```
@@ -76,4 +82,4 @@ To make a shortcut type:
 ```"echo mylocalshortcut:/path/to/my/local/shortut" >> ~/bin/shortcuts```
 
 To use a shortuct type:
-```cd :mylocalshortcut ```
+```cd :mylocalshortcut   ```
