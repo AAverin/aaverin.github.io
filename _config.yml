@@ -44,3 +44,6 @@ categories_path: categories/index.html
 tags_path: tags/index.html
 
 BASE_PATH:
+
+gems:
+  - jekyll-sitemap
